@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en-US">
+
+
+<script type="text/javascript">
+    
+        function activandoCuenta(){
+            app.usrEstado("ACTIVANDO_CUENTA_AFORE");
+            window.webkit.messageHandlers.usrEstado.postMessage("ACTIVANDO_CUENTA_AFORE");
+        }
+
+        function asiganadoOtraAfore(){
+            app.usrEstado("ASIGNADO_A_OTRA_AFORE");
+            window.webkit.messageHandlers.usrEstado.postMessage("ASIGNADO_A_OTRA_AFORE");
+        }
+
+        function revisandoRegistro(){
+            app.usrEstado("REVISANDO_REGISTRO_AFORE_SURA");
+            window.webkit.messageHandlers.usrEstado.postMessage("REVISANDO_REGISTRO_AFORE_SURA");
+        }
+
+        function cuentaEnTraspaso(){
+            app.usrEstado("CUENTA_EN_TRASPASO_A_SURA");
+            window.webkit.messageHandlers.usrEstado.postMessage("CUENTA_EN_TRASPASO_A_SURA");
+        }
+
+        function registroActivo(){
+            app.usrEstado("REGISTRO_ACTIVO_OTRO_AFORE");
+            window.webkit.messageHandlers.usrEstado.postMessage("REGISTRO_ACTIVO_OTRO_AFORE");
+        }
+
+        function curpDuplicada(){
+            app.usrEstado("CURP_DUPLICADA");
+            window.webkit.messageHandlers.usrEstado.postMessage("CURP_DUPLICADA");
+        }
+
+        function cienteEnAfore(){
+            app.usrEstado("CLIENTE_EN_AFORE");
+            window.webkit.messageHandlers.usrEstado.postMessage("CLIENTE_EN_AFORE");
+        }
+
+        function trabajadorIndependiente(){
+            app.usrEstado("TRABAJADOR_INDEPENDIENTE");
+            window.webkit.messageHandlers.usrEstado.postMessage("TRABAJADOR_INDEPENDIENTE");
+        }
+
+        function asignadoAAfore(){
+            app.usrEstado("ASIGNADO_A_AFORE_SURA");
+            window.webkit.messageHandlers.usrEstado.postMessage("ASIGNADO_A_AFORE_SURA");
+        }
+
+        function curpInactiva(){
+            app.usrEstado("CURP_INACTIVA");
+            window.webkit.messageHandlers.usrEstado.postMessage("CURP_INACTIVA");
+        }
+
+        function cienteEnOtraAfore(){
+            app.usrEstado("CLIENTE_EN_OTRA_AFORE");
+            window.webkit.messageHandlers.usrEstado.postMessage("CLIENTE_EN_OTRA_AFORE");
+        }
+
+        function curpInvalida(){
+            app.usrEstado("CURP_INVALIDA");
+            window.webkit.messageHandlers.usrEstado.postMessage("CURP_INVALIDA");
+        }
+
+        function curpOtroCorreo(){
+            app.usrEstado("CURP_REGISTRADA_CON_OTRO_CORREO");
+            window.webkit.messageHandlers.usrEstado.postMessage("CURP_REGISTRADA_CON_OTRO_CORREO");
+        }
+
+        function errorSolicitud(){
+            app.usrEstado("ERROR_SOLICITUD");
+            window.webkit.messageHandlers.usrEstado.postMessage("ERROR_SOLICITUD");
+        }
+
+        function desconocido(){
+            app.usrEstado("DESCONOCIDO");
+            window.webkit.messageHandlers.usrEstado.postMessage("DESCONOCIDO");
+        }
+        
+</script>
+
+
+<body>
+        <input type=button onClick="activandoCuenta()" value="activandoCuenta"></br>
+        <input type=button onClick="asiganadoOtraAfore()" value="asiganadoOtraAfore"></br>
+        <input type=button onClick="revisandoRegistro()" value="revisandoRegistro"></br>
+        <input type=button onClick="cuentaEnTraspaso()" value="cuentaEnTraspaso"></br>
+        <input type=button onClick="registroActivo()" value="registroActivo"></br>
+        <input type=button onClick="curpDuplicada()" value="curpDuplicada"></br>
+        <input type=button onClick="cienteEnAfore()" value="cienteEnAfore"></br>
+        <input type=button onClick="trabajadorIndependiente()" value="trabajadorIndependiente"></br>
+        <input type=button onClick="asignadoAAfore()" value="asignadoAAfore"></br>
+        <input type=button onClick="curpInactiva()" value="curpInactiva"></br>
+        <input type=button onClick="cienteEnOtraAfore()" value="cienteEnOtraAfore"></br>
+        <input type=button onClick="curpInvalida()" value="curpInvalida"></br>
+        <input type=button onClick="curpOtroCorreo()" value="curpOtroCorreo"></br>
+        <input type=button onClick="errorSolicitud()" value="errorSolicitud"></br>
+        <input type=button onClick="desconocido()" value="desconocido">
+</body>
+</html>
