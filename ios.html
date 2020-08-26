@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en-US">
+   <script type="text/javascript">
+      function responderMovil(estadoCurp){
+          console.log("Si entró: " + estadoCurp);
+          webkit.messageHandlers.usrEstado.postMessage(estadoCurp);
+      }
+      
+      
+   </script>
+   <body>
+      <center>
+        <h1>Simulación de qiip para respuestas de la landing AFORE.</h1></br></br></br></br>
+        <img _ngcontent-serverapp-c1="" alt="" src="https://images.prismic.io/sitio-web-qiip/d6c43838-716e-460f-a97d-a2cbcc7c5a42_monedas+p%C3%A1gina+web_Mesa+de+trabajo+1.png?auto=compress,format"><img _ngcontent-serverapp-c1="" alt="" src="https://images.prismic.io/sitio-web-qiip/eb5c633f-3ccf-46fd-8b8a-9d858e18035e_monedas+p%C3%A1gina+web_Mesa+de+trabajo+1+copia.png?auto=compress,format"></br></br></br></br>
+         <input class="button" type=button onClick="responderMovil('ACTIVANDO_CUENTA_AFORE')" value="ACTIVANDO_CUENTA_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovil('ASIGNADO_A_OTRA_AFORE')" value="ASIGNADO_A_OTRA_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovil('REVISANDO_REGISTRO_AFORE_SURA')" value="REVISANDO_REGISTRO_AFORE_SURA"></br></br>
+         <input class="button" type=button onClick="responderMovil('CUENTA_EN_TRASPASO_A_SURA')" value="CUENTA_EN_TRASPASO_A_SURA"></br></br>
+         <input class="button" type=button onClick="responderMovil('REGISTRO_ACTIVO_OTRO_AFORE')" value="REGISTRO_ACTIVO_OTRO_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovil('CURP_DUPLICADA')" value="CURP_DUPLICADA"></br></br>
+         <input class="button" type=button onClick="responderMovil('CLIENTE_EN_AFORE')" value="CLIENTE_EN_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovil('TRABAJADOR_INDEPENDIENTE')" value="TRABAJADOR_INDEPENDIENTE"></br></br>
+         <input class="button" type=button onClick="responderMovil('ASIGNADO_A_AFORE_SURA')" value="ASIGNADO_A_AFORE_SURA"></br></br>
+         <input class="button" type=button onClick="responderMovil('CURP_INACTIVA')" value="CURP_INACTIVA"></br></br>
+         <input class="button" type=button onClick="responderMovil('CLIENTE_EN_OTRA_AFORE')" value="CLIENTE_EN_OTRA_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovil('CURP_INVALIDA')" value="CURP_INVALIDA"></br></br>
+         <input class="button" type=button onClick="responderMovil('CURP_REGISTRADA_CON_OTRO_CORREO')" value="CURP_REGISTRADA_CON_OTRO_CORREO"></br></br>
+         <input class="button" type=button onClick="responderMovil('ERROR_SOLICITUD')" value="ERROR_SOLICITUD"></br></br>
+         <input class="button" type=button onClick="responderMovil('DESCONOCIDO')" value="DESCONOCIDO"></br></br>
+      </center>
+      <div>by celula5 :D</div>
+   </body>
+   <style>
+    .button {
+      background-color: #9003fe;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10%;
+    }
+    </style>
+</html>
