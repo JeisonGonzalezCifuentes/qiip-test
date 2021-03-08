@@ -2,6 +2,15 @@
 <!-- saved from url=(0014)about:internet -->
 <html lang="en-US">
    <script type="text/javascript">
+      // recuperamos el querystring
+      const querystring = window.location.search;
+      console.log("querystring" + querystring);
+      
+      // usando el querystring, creamos un objeto del tipo URLSearchParams
+      const params = new URLSearchParams(querystring);
+      params.get("utm_source");
+      console.log("utm_source" + utm_source);
+      
       function responderMovil(estadoCurp){
          var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false );
          console.log("Respondiendo a la app qiip: " + estadoCurp);
