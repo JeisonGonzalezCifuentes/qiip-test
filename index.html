@@ -8,8 +8,7 @@
       
       // usando el querystring, creamos un objeto del tipo URLSearchParams
       const params = new URLSearchParams(querystring);
-      params.get("utm_source");
-      console.log("utm_source" + utm_source);
+      console.log("utm_source" + params.get("utm_source"));
       
       function responderMovil(estadoCurp){
          var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false );
