@@ -6,8 +6,11 @@
           console.log("Si entró: " + estadoCurp);
           webkit.messageHandlers.usrEstado.postMessage(estadoCurp);
       }
-      
-      
+
+      function responderMovilAccion(accion){
+          console.log("Si entró acción: " + accion);
+          webkit.messageHandlers.usrEstado.postMessage(accion);
+      }
    </script>
    <body>
       <center>
@@ -28,6 +31,10 @@
          <input class="button" type=button onClick="responderMovil('CURP_REGISTRADA_CON_OTRO_CORREO')" value="CURP_REGISTRADA_CON_OTRO_CORREO"></br></br>
          <input class="button" type=button onClick="responderMovil('ERROR_SOLICITUD')" value="ERROR_SOLICITUD"></br></br>
          <input class="button" type=button onClick="responderMovil('DESCONOCIDO')" value="DESCONOCIDO"></br></br>
+         <input class="button" type=button onClick="responderMovil('EN_OTRO_AFORE')" value="EN_OTRO_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovilAccion('NO_GRACIAS_EN_OTRO_AFORE')" value="NO_GRACIAS_EN_OTRO_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovilAccion('EN_OTRO_MOMENTO_EN_OTRO_AFORE')" value="EN_OTRO_MOMENTO_EN_OTRO_AFORE"></br></br>
+         <input class="button" type=button onClick="responderMovilAccion('CONTACTEME_EN_OTRO_AFORE')" value="CONTACTEME_EN_OTRO_AFORE"></br></br>
       </center>
       <div>by celula5 :D</div>
    </body>
